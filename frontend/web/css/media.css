@@ -175,6 +175,10 @@
         padding-left: 10px;
     }
 
+    .container.cts {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
 
 
 }
