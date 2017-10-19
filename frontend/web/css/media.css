@@ -22,7 +22,7 @@
     }
 
     #header ul.nav-second-main {
-        margin-top: 23px;
+        margin-top: 21px;
         margin-right: 17px;
     }
 
@@ -164,4 +164,15 @@
         padding-left: 10px;
     }
 
+}
+
+@media(min-width:992px){
+	#topNav ul.dropdown-menu{
+		width:500px;
+	}
+	
+	#topNav ul.dropdown-menu li{
+		float:left;
+		width:50%;
+	}
 }
