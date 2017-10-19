@@ -355,6 +355,7 @@ div.side-nav ul > li:before
 
 #header ul.nav-second-main li>a{
 	padding: 0 7px;
+	line-height: 24px;
 }
 
 #header.fixed #topNav .sx-menu-bg
