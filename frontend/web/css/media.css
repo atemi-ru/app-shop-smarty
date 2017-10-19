@@ -144,4 +144,24 @@
         padding-left: 10px;
     }
 
+    div.shop-item {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #topNav button.btn-mobile {
+        margin-top: 14px;
+    }
+
+    #p0 {
+        padding-left: 10px;
+    }
+
+    .product-size-dd, .product-qty-dd, .product-add-cart {
+        width: 94% !important;
+    }
+
+    h2.owl-featured {
+        padding-left: 10px;
+    }
+
 }
