@@ -164,6 +164,19 @@
         padding-left: 10px;
     }
 
+    #sx-cart-full {
+        padding-left: 10px;
+    }
+
+    section.padding-xxs {
+        padding-left: 10px;
+    }
+    .text-gallery {
+        padding-left: 10px;
+    }
+
+
+
 }
 
 @media(min-width:992px){
