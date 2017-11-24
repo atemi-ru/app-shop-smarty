@@ -346,7 +346,20 @@ div.shop-item-summary h2
 }
 
 .footer-col{
-	margin-bottom:20px;
+	margin-bottom:20px!important
+}
+
+@media only screen and (max-width: 480px){
+	#footer h4 {
+		margin-top: 0px;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	#footer .row>div {
+		margin-bottom: initial;
+	}
 }
 
 #topBar ul.top-links > li > a
@@ -812,6 +825,7 @@ h2.owl-featured
 	font-family: daysregular;
     font-style: italic;
 	    font-weight: 600;
+	margin-bottom: 25px;
 }
 
 div.row>div img.img-responsive {
