@@ -104,19 +104,12 @@
         margin-bottom: 5px;
     }
 
-    #footer .row > div {
-        margin-bottom: 0;
-    }
 
     #footer {
         padding-right: 10px;
         padding-left: 10px;
     }
-
-    #footer>.copyright {
-        background: none !important;
-    }
-
+ 
     .padding-bottom-20 {
         padding-bottom: 1px !important;
     }
