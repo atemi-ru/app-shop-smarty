@@ -27,6 +27,7 @@ class AppAsset extends AssetBundle
     public $css = [
         'https://fonts.googleapis.com/css?family=Open+Sans',
         'css/animate.css',
+		 'css/green.css',
         'css/fast.css',
         'css/media.css',
     ];

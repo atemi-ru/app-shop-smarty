@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'daysregular';
+    src: url('fonts/days-webfont.eot');
+    src: url('fonts/days-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/days-webfont.woff2') format('woff2'),
+         url('fonts/days-webfont.woff') format('woff'),
+         url('fonts/days-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h2, h3, #footer h4{
+	font-family:daysregular;
+	font-style:italic;
+}
+
 .navbar-default .navbar-nav > li > a
 {
     font-family: 'Open Sans', sans-serif;
@@ -67,8 +84,8 @@ div.shop-item
 
 div.shop-item:hover
 {
-    border: 8px solid rgb(165, 207, 255);
-    box-shadow: 0px 0px 1px rgb(165, 207, 255);
+    border: 8px solid #C5DC99;
+    box-shadow: 0px 0px 1px #101010;
 }
 
 div.shop-item .thumbnail
@@ -264,11 +281,6 @@ div.shop-item-summary h2
     padding-bottom: 7px;
 }
 
-#footer
-{
-    /*background: rgb(165, 207, 255);*/
-    color: white;
-}
 
 #sx-center-wrapper
 {
@@ -280,25 +292,74 @@ div.shop-item-summary h2
    /*  padding: 0px 15px 0px 15px; */
 }
 
+#footer
+{
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    max-width: 1200px;
+	background:#E4E4E4;
+	color:#333;
+}
+
+#footer a{
+	color:#333;
+}
+
+
 #footer ul.footer-links > li > a, #footer a
 {
-    color: white;
+    color:#333;
     text-decoration: underline;
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#footer a:hover {
+    color:#333;
+}
+#footer ul.footer-links>li>a:hover {
+    color:#333;
 }
 
 #footer h4
 {
-    color: white;
+   color:#4E5862;
     text-transform: uppercase;
     font-size: 19px;
 }
 
 #footer a.social-icon.social-icon-border
 {
-    color: white !important;
-    border-color: white !important;
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #333!important;
+    border:none;
+    text-shadow: none;
+}
+#footer>.copyright {
+    background-color: #272727;
+    text-shadow: none;
+    color: #fff;
+    padding: 25px 0;
+    font-size: 13px;
+    display: block;
+}
+ 
+#footer>.copyright a{
+	color:#fff;
+}
+
+.footer-col{
+	margin-bottom:20px!important
+}
+
+@media only screen and (max-width: 480px){
+	#footer h4 {
+		margin-top: 0px;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	#footer .row>div {
+		margin-bottom: initial;
+	}
 }
 
 #topBar ul.top-links > li > a
@@ -310,6 +371,7 @@ div.shop-item-summary h2
 {
     background: white;
 }
+
 
 .sx-top-logo-block
 {
@@ -356,15 +418,22 @@ div.side-nav ul > li:before
 #header ul.nav-second-main li>a{
 	padding: 0 7px;
 	line-height: 24px;
+	color:#fff;
 }
+
+#header li.search i.fa{
+	color:#fff;
+}
+
+
 
 #header.fixed #topNav .sx-menu-bg
 {
     height: 60px;
 }
 
-#topMain > li > a
-{
+#header #topMain > li > a
+{	color:#fff;
     height: 66px;
     line-height: 43px;
 }
@@ -383,19 +452,55 @@ div.side-nav ul > li:before
 
 #topNav .sx-menu-bg
 {
-    background: url('../img/bg/texture-1.png') repeat repeat;
-
-    /*height: 56px;*/
+    background:  #82BE4B;
     border-top: 1px solid rgba(192, 192, 192, 0.48);
     border-bottom: 1px solid rgba(192, 192, 192, 0.48);
-    /*background: url('/img/menu-6.png') -0px -127px;
-*/
     height: 66px;
+}
+
+@media(max-width:990px){
+	#topNav .sx-menu-bg {
+		background: #EDEFEC;
+	}
+	
+	#header ul.nav-second-main li>a{
+		padding: 0 7px;
+		line-height: 24px;
+		color:#8ab933;
+	}
+	
+	#header li.search i.fa{
+		color:#8ab933;
+	}
+	
+	#header #topMain > li > a
+	{	color:#8ab933;
+		height: 66px;
+		line-height: 43px;
+	}
 }
 
 #header.fixed #topNav .sx-menu-bg
 {
     border: none;
+}
+#header.fixed a{
+	color:#8ab933;
+}
+#header.fixed  ul.nav-second-main li>a{
+		padding: 0 7px;
+		line-height: 24px;
+		color:#8ab933;
+	}
+	
+#header.fixed  li.search i.fa{
+	color:#8ab933;
+}
+
+#header.fixed  #topMain > li > a
+{	color:#8ab933;
+	height: 66px;
+	line-height: 43px;
 }
 
 .size-30
@@ -442,7 +547,8 @@ div.side-nav ul.list-group-bordered > li > a
 
 body
 {
-    background: url('../img/bg/5.png') repeat repeat;
+   /*  background: url('../img/bg/5.png') repeat repeat; */
+   background:#4E5862;
 }
 
 #header.fixed
@@ -547,20 +653,20 @@ h2.owl-featured
 
 /*Rewrite base css*/
 
-.inews-content-inner h3 > a, div.side-nav ul > li:hover > a, div.side-nav ul > li.active > a, .pagination.pagination-simple > li.active > a, div.side-nav ul.list-group-bordered > li > a:hover, section .theme-color
+/* .inews-content-inner h3 > a, div.side-nav ul > li:hover > a, div.side-nav ul > li.active > a, .pagination.pagination-simple > li.active > a, div.side-nav ul.list-group-bordered > li > a:hover, section .theme-color
 {
     color: #4EA9FE !important;
-}
+} */
 
-.open > .dropdown-toggle.btn-primary, .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:hover .pagination > .active > a, .pagination > .active > a:hover
+/* .open > .dropdown-toggle.btn-primary, .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:hover .pagination > .active > a, .pagination > .active > a:hover
 {
     border-color: #4EA9FE;
-}
+} */
 
-#sidepanel.sidepanel-theme-color, div.alert.alert-theme-color, div.alert.alert-primary, span.badge-default, span.label-default, .list-group-item.active > .badge.badge-default, .nav-tabs.nav-alternate > li.active > a, .datepicker table tr td.active.active, .callout-theme-color, .progress-bar-primary, .toast-primary, .owl-theme .owl-controls .owl-page span, .open > .dropdown-toggle.btn-primary, .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .pagination > .active > a, .pagination > .active > a:hover, #header li.quick-cart .quick-cart-box a.btn, #header li.quick-cart .quick-cart-box a.btn:hover, #topMain.nav-pills > li.active > a > span.theme-color, .ei-slider-thumbs li.ei-slider-element, .flex-control-paging li a.flex-active, .tp-caption.block_theme_color, .tp-bullets.simplebullets.round .bullet.selected, i.ico-color, .caption-primary, .shop-list-options .btn.active, .box-static.box-color, .switch.switch-primary > input:checked + .switch-label, .fancy-file-upload.fancy-file-primary > span.button, .primary-slider .ui-slider .ui-slider-handle:before, .primary-slider .ui-slider .ui-slider-range, .ribbon-inner, .info-bar.info-bar-color, .music-album-title:hover, .inews-item .inews-thumbnail .inews-sticky, .btn > .new-primary, #progressBar #bar, #page-menu, #page-menu ul
+/* #sidepanel.sidepanel-theme-color, div.alert.alert-theme-color, div.alert.alert-primary, span.badge-default, span.label-default, .list-group-item.active > .badge.badge-default, .nav-tabs.nav-alternate > li.active > a, .datepicker table tr td.active.active, .callout-theme-color, .progress-bar-primary, .toast-primary, .owl-theme .owl-controls .owl-page span, .open > .dropdown-toggle.btn-primary, .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .pagination > .active > a, .pagination > .active > a:hover, #header li.quick-cart .quick-cart-box a.btn, #header li.quick-cart .quick-cart-box a.btn:hover, #topMain.nav-pills > li.active > a > span.theme-color, .ei-slider-thumbs li.ei-slider-element, .flex-control-paging li a.flex-active, .tp-caption.block_theme_color, .tp-bullets.simplebullets.round .bullet.selected, i.ico-color, .caption-primary, .shop-list-options .btn.active, .box-static.box-color, .switch.switch-primary > input:checked + .switch-label, .fancy-file-upload.fancy-file-primary > span.button, .primary-slider .ui-slider .ui-slider-handle:before, .primary-slider .ui-slider .ui-slider-range, .ribbon-inner, .info-bar.info-bar-color, .music-album-title:hover, .inews-item .inews-thumbnail .inews-sticky, .btn > .new-primary, #progressBar #bar, #page-menu, #page-menu ul
 {
     background-color: #4EA9FE;
-}
+} */
 
 /*Slider in filters*/
 
@@ -682,11 +788,20 @@ h2.owl-featured
 }
 
 .sx-top-phone {
+   font-size: 15px; 
+   padding-top: 14px; 
+   text-align: center;
+}
+.sx-top-addr {
     font-size: 16px;
-    padding-top: 20px;
-    text-align: center;
+    line-height: 28px;
+    color: #333;
+    padding-top: 18px;
 }
 
+.cl-green{
+	color:#82BE4B;
+}
 /*main page slider*/
 .mslider {
     padding-top: 20px;
@@ -699,12 +814,18 @@ h2.owl-featured
     padding-bottom: 20px;
     border: none;
 }
+.recslider h2{
+	color:#82BE4B;
+}
 
 .fo4 {
-    letter-spacing: 0.1em !important;
-    color: white;
+	color: #4E5862;
     text-transform: uppercase;
     font-size: 19px;
+	font-family: daysregular;
+    font-style: italic;
+	    font-weight: 600;
+	margin-bottom: 25px;
 }
 
 div.row>div img.img-responsive {
