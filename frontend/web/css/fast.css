@@ -438,6 +438,11 @@ div.side-nav ul > li:before
     line-height: 43px;
 }
 
+.mobile-menu #topMain > li > a {
+    height: 28px;
+    line-height: 23px;
+}
+
 #header
 {
     box-shadow: none !important;
