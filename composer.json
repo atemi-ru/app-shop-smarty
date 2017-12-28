@@ -18,6 +18,8 @@
     ],
     "require": {
         "skeeks/cms-basic-shop": "~1.0.0",
+        "skeeks/cms": "dev-master",
+        "skeeks/cms-shop": "dev-master",
         "skeeks/cms-export-shop-yandex-market": "*",
         "atemi/smarty-theme": "dev-master",
         "skeeks/yii2-mmenu-widget": "~2.0",
