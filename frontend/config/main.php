@@ -9,9 +9,6 @@
  * @since 1.0.0
  */
 $config = [
-    'basePath' => dirname(__DIR__),
-    'controllerNamespace' => 'frontend\controllers',
-    'params' => [],
     'on beforeRequest' => function ($event) {
         \Yii::setAlias('template', '@app/views');
         //  if (\Yii::$app->admin->requestIsAdmin)
